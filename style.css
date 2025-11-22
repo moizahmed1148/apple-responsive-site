@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.mainbox{
+    width: 100%  !important;
+}
+#nav {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.883);
+    align-items: center;
+    justify-content: space-between; /* Better layout */
+    padding: 10px 30px;
+    color: white;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 55px;
+}
+
+/* Logo text */
+#nav span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* nav links */
+#nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 !important;   /* FIX */
+    padding: 0 !important;  /* FIX */
+}
+
+#nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* nav icons */
+#navimg {
+    height: 17px;
+    width: 15px;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/images/hero_medium.jpg);
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;  
+    align-items: flex-end;   
+    padding-bottom: 4em;
+}
+
+#content{
+    text-align: center;
+}
+
+#firtHeading{
+    font-size: 55px;
+    color: white;
+}
+#SecondHeading{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+#btn{
+    background-color: #0071E3;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 15px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+#iphone{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/images/hero_iphone_17_pro__bknyzxfk2agi_medium.jpg);
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;  
+    background-repeat: repeat-x;
+    align-items: start; 
+    padding-top: 5em;
+    color: white;
+}
+
+#pro1{
+    font-size: 3.5em;
+}
+#pro2{
+    font-weight: 500;
+    text-align: center;
+}
+#air1{
+    font-size: 3.5em;
+    text-align: center;
+    color: black;
+}
+#air2{
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+#iphoneBtn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+#more{
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: #0071E3;
+        border: 1px solid #0071E3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#buy{
+    padding: 15px 22px;
+    border-radius: 50px;
+    border: 1px solid #0071E3;
+    background-color: transparent;
+    cursor: pointer;
+    color: #0071E3;
+}
+#buy:hover{
+    background-color: #0071E3;
+    color: white;
+}
+#iphoneAir{
+       height: 100vh;
+    width: 100%;
+     background-image: url(https://www.apple.com/v/home/ci/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_large.jpg);
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;  
+    align-items: start; 
+    padding-top: 5em;
+    color: white;
+}
+
+#prt1{
+    height: 100vh;
+    background-color: #0071E3;
+    width: 49.5%;
+    background-image: url(./assets/images/promo_holiday_2025_large.jpg);
+      object-fit: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center ;
+}
+#prt2{
+    height: 100vh;
+    background-image:url(./assets/images/promo_airpodspro_3_large.jpg) ;
+    object-fit: cover;
+    background-position: center;
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3em;
+    align-items: center ;
+}
+
+#promotion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 8px;
+}
+#prt1content{
+    padding-bottom: 60px;
+    text-align: center;
+}
+#prt2content{
+    text-align: center;
+}
+#prt1heading1{
+    font-size: 38px;
+}
+#prt1heading1{
+    font-size: 38px;
+}
+#prt2heading1{
+    font-size: 38px;
+}
+#prt1heading2{
+    font-size: 18px;
+    font-weight: 400;
+}
+#prt2heading2{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#prt1btn{
+    padding: 11px 18px;
+    background-color: #0071E3;
+    border-radius: 50px;
+    border: 1px solid #0071E3;
+    color: white;
+    margin-top: 13px;
+}
+
+
+#ipad{
+    height: 100vh;
+    background-image:url(./assets/images/promo_ipad_air_avail__large.jpg) ;
+       object-fit: cover;
+    background-position: center;
+    width: 49.5%;
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3em;
+    align-items: center ;
+}
+#watch{
+    height: 100vh;
+    background-image:url(./assets/images/promo_apple_watch_series_11__large.jpg) ;
+       object-fit: cover;
+    background-position: center;
+    width: 49.5%;
+        background-repeat: repeat-x;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3em;
+    align-items: center ;
+}
+#deals{
+    height: 100vh;
+    background-image:url(./assets/images/promo_carrier__e0izvxwqosgi_large.jpg) ;
+       object-fit: cover;
+    background-position: center;
+    width: 49.5%;
+        background-repeat: repeat-x;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3em;
+    align-items: center ;
+}
+#trade{
+    height: 100vh;
+    background-image:url(./assets/images/promo_iphone_tradein__bugw15ka691e_large.jpg) ;
+       object-fit: cover;
+    background-position: center;
+    width: 49.5%;
+        background-repeat: repeat-x;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3em;
+    align-items: center ;
+}
+
+#dealsheading1{
+    font-size: 2.3em;
+}
+
+#dealsheading2{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+}
+#tradeheading2{
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+#lastSection {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.card-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#cardImg{
+    width: 32.5%;
+    height: 250px;
+    border-radius: 8px;
+}
+.paragraph{
+    width: 100%;
+    background-color: #F5F5F7;
+    padding: 10px 12em;
+}
+.paragraph > p{
+    font-size: 12px;
+} 
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #111;
+}
+
+.footer-column p {
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer-column p:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+#footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+#footer-bottom p {
+  margin: 0;
+}
+#mobilenav{
+        display: none;
+    }
+.footer-bottom-center p {
+  text-align: center;
+}
+
+.footer-bottom-left, 
+.footer-bottom-center, 
+.footer-bottom-right {
+  margin: 5px 0;
+}
+
+.footer-bottom-center p span {
+  margin: 0 10px;
+}
+#prt1, #prt2, #ipad, #watch, #deals, #trade {
+    width: 49.5%;
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #firtHeading { font-size: 45px; }
+    #SecondHeading { font-size: 20px; }
+    #pro1, #air1 { font-size: 2.5em; }
+    #pro2, #air2 { font-size: 22px; }
+
+    #prt1, #prt2, #ipad, #watch, #deals, #trade {
+        width: 100%;
+    }
+    #mobilenav{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    #cardImg { width: 48%; height: 200px; }
+    .paragraph { padding: 10px 3em; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #firtHeading { font-size: 30px; }
+    #SecondHeading { font-size: 18px; }
+    #pro1, #air1 { font-size: 30px; }
+    #pro2, #air2 { font-size: 18px; }
+    #dealsheading1{
+        font-size:30px;
+    }
+    #dealsheading2{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #prt1, #prt2, #ipad, #watch, #deals, #trade {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 2em;
+    }
+    #nav{
+        display: none;
+
+    }
+    #mobilenav{
+        background-color: rgba(0, 0, 0, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        padding: 10px;
+        height:40px;
+        z-index: 999;
+        top: 0;
+    }
+    #footer{
+        display: none;
+    }
+    #iphone{
+        background-image: url(./assets/images/hero_iphone_17_pro__bknyzxfk2agi_small.jpg);
+        justify-content: center; 
+        align-items: flex-start;
+        padding: 15px;
+        height: 100vh;
+    }
+    #iphoneAir{
+    background-image: url(./assets/images/hero_iphone_air__0gxyavihpiqu_small.jpg);
+    justify-content: center;  
+    align-items: start; 
+    padding-top: 15px;
+    }
+    #iphoneBtn > #more{
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: #0071E3;
+    border: 1px solid #0071E3;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    }
+    #cardImg { width: 100%; height: 180px; }
+    .paragraph { padding: 10px 2em; }
+
+
+    #btn, #more, #buy, #prt1btn { padding: 10px 18px; font-size: 14px; }
+}
+
