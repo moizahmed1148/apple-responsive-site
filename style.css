@@ -172,7 +172,7 @@ html,body{
     background-color: #0071E3;
     width: 49.5%;
     background-image: url(./assets/images/promo_holiday_2025_large.jpg);
-      object-fit: cover;
+    object-fit: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -198,15 +198,18 @@ html,body{
     gap: 10px;
     padding: 8px;
 }
+#applePromotion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 8px;
+}
 #prt1content{
     padding-bottom: 60px;
     text-align: center;
 }
 #prt2content{
     text-align: center;
-}
-#prt1heading1{
-    font-size: 38px;
 }
 #prt1heading1{
     font-size: 38px;
@@ -386,12 +389,38 @@ html,body{
 .footer-bottom-center p span {
   margin: 0 10px;
 }
+#prt1{
+    justify-content:end;
+
+}
+#mobileFooter{
+        display: none;
+    }
 #prt1, #prt2, #ipad, #watch, #deals, #trade {
     width: 49.5%;
     max-width: 100%;
 }
-
-@media (max-width: 1024px) {
+#footerParagraph{
+    padding: 10px 0px;
+}
+@media (max-width: 768px){
+     .footerLinks{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    #footer{
+        display: none;
+    }
+    #mobilenav{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    #mobileFooter{
+        display: block;
+    }
     #firtHeading { font-size: 45px; }
     #SecondHeading { font-size: 20px; }
     #pro1, #air1 { font-size: 2.5em; }
@@ -400,20 +429,66 @@ html,body{
     #prt1, #prt2, #ipad, #watch, #deals, #trade {
         width: 100%;
     }
-    #mobilenav{
-        display: none;
-    }
     #footer{
         display: none;
     }
     #cardImg { width: 48%; height: 200px; }
     .paragraph { padding: 10px 3em; }
+        #mobilenav{
+        background-color: rgba(0, 0, 0, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        padding: 10px;
+        height:40px;
+        z-index: 999;
+        top: 0;
+    }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-    #firtHeading { font-size: 30px; }
-    #SecondHeading { font-size: 18px; }
+@media (max-width: 576px) {
+    #firtHeading { 
+    font-size: 26px; 
+    padding: 0px 10px;
+    }
+    .footerLinks{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    .footer-bottom-center{
+        text-align: left;
+    }
+    #footerParagraph{
+        display: none;
+    }
+    .footer-bottom-center{
+        text-align: left;
+        width: 100%;
+    }
+    .footer-bottom-right{
+        text-align: left;
+        width: 100%;
+    }
+    #prt1btn {
+        padding: 5px 14px;
+    }
+    #prt1heading2{
+        padding: 0px 10px;
+    }
+    #promotion{
+        width: 100vw;
+        padding: 10px 0px;
+    }
+    #applePromotion{
+        width: 100vw;
+        padding: 10px 0px;
+    }
+    #SecondHeading { 
+    font-size:16px;
+     }
     #pro1, #air1 { font-size: 30px; }
     #pro2, #air2 { font-size: 18px; }
     #dealsheading1{
@@ -431,6 +506,10 @@ html,body{
     }
     #nav{
         display: none;
+
+    }
+    #main{
+        padding-bottom: 18px;
 
     }
     #mobilenav{
@@ -453,6 +532,8 @@ html,body{
         align-items: flex-start;
         padding: 15px;
         height: 100vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     #iphoneAir{
     background-image: url(./assets/images/hero_iphone_air__0gxyavihpiqu_small.jpg);
@@ -469,10 +550,25 @@ html,body{
     cursor: pointer;
     font-size: 12px;
     }
-    #cardImg { width: 100%; height: 180px; }
-    .paragraph { padding: 10px 2em; }
+    #cardImg { 
+    width: 100%; height: 180px;
+    }
+    .paragraph{ 
+        padding: 10px 2em; 
+    }
+    #prt1heading1{
+    font-size: 35px;
+        padding: 0px 10px;
+    }
+    #footer-bottom{
+        align-items: flex-start;
+    }
+    #prt2heading1{
+        font-size: 38px;
+    }
 
-
-    #btn, #more, #buy, #prt1btn { padding: 10px 18px; font-size: 14px; }
+    #btn, #more, #buy, #prt1btn{ 
+    padding: 7px 15px; font-size: 14px; 
+    }
 }
 
